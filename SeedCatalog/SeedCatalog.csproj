@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SeedCatalogClassLibrary\SeedCatalogClassLibrary.csproj">
+      <Project>{7f3be27c-4b78-4f3f-a8d6-65ebb029b7a0}</Project>
+      <Name>SeedCatalogClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
