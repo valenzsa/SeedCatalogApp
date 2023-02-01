@@ -13,5 +13,16 @@ namespace SeedCatalogClassLibrary.Enums
             Flowers,
             Vegetables
         }
+
+        public enum VegetableCategories
+        {
+            Beans,
+            Tomatoes,
+            Peppers,
+            Gourds,
+            Squash,
+            Eggplants,
+            LeafyGreens
+        }
     }
 }

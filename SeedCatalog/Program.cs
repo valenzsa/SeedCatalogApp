@@ -30,6 +30,7 @@ namespace SeedCatalog
             List<VendorsModel> vendors = new List<VendorsModel>();
             string vendorsName = string.Empty;
             string plantType = string.Empty;
+            string vegetableCategoryName = string.Empty;
 
             do
             {
@@ -61,6 +62,8 @@ namespace SeedCatalog
                         } else if(planttype.ToLower() == "vegetables")
                         {
                             Console.WriteLine($"You have selected {planttype}");
+                            Console.Write($"Please select a category name at which your vegetable belongs to: ");
+                            vegetableCategoryName = Console.ReadLine();
                         } 
                     }
                 }
