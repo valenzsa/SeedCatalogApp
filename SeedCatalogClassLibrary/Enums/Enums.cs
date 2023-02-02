@@ -24,5 +24,14 @@ namespace SeedCatalogClassLibrary.Enums
             Eggplants,
             LeafyGreens
         }
+
+        public enum FlowerCategories
+        {
+            BeeBalm,
+            Cosmos,
+            Marigold,
+            Sunflower,
+            Zinnia
+        }
     }
 }
