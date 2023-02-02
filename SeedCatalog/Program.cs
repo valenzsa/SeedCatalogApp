@@ -101,6 +101,9 @@ namespace SeedCatalog
                             Console.WriteLine();
                             vegetableCategoryName = Console.ReadLine();
                             Console.WriteLine();
+
+                            if(vegetableCategoryName.ToLower() == )
+
                             Console.WriteLine("==========================");
                             Console.WriteLine();
                         } 
