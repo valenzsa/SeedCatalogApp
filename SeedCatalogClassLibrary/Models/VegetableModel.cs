@@ -9,17 +9,17 @@ namespace SeedCatalogClassLibrary.Models
 {
     public class VegetableModel : IDetails
     {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Genus { get; set; }
+        public string Species { get; set; }
+        public string LightRequirements { get; set; }
+        public string Zone { get; set; }
+        public string Instructions { get; set; }
+        public bool hasImages { get; set; }
+        public string Images { get; set; }
         public string SeedType { get; set; }
         public string FruitColor { get; set; }
         public int DaysToMature { get; set; }
-        public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Genus { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Species { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string LightRequirements { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Zone { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Instructions { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool hasImages { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Images { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }
