@@ -113,7 +113,7 @@ namespace SeedCatalog
                                     {
                                         Console.WriteLine($"{vegetableCategoryName} is EQUAL TO {vegetableCategories}");
                                         isSelectedCategoryNameMatched = true;
-                                        CreateVegetableDetails();
+                                        CreateVegetableDetails(vegetableCategoryName);
                                     }
                                     else
                                     {
@@ -142,18 +142,21 @@ namespace SeedCatalog
             } while (vendorsName.ToLower() != "exit");
         }
 
-        public static void CreateVegetableDetails()
+        public static void CreateVegetableDetails(string vegetableCategoryName)
         {
             List<VegetableModel> vegetables = new List<VegetableModel>();
-            string vegetableName;
             bool IsANumber;
+            string response;
 
             do
             {
                 VegetableModel vegetable = new VegetableModel();
+
+                Console.WriteLine($"Add another vegetable to {vegetableCategoryName} category");
+                response = Console.ReadLine();
+
                 Console.WriteLine("Name: ");
-                vegetableName = Console.ReadLine();
-                vegetable.Name = vegetableName;
+                vegetable.Name = Console.ReadLine();
 
                 Console.WriteLine("Description: ");
                 vegetable.Description = Console.ReadLine();
@@ -182,6 +185,17 @@ namespace SeedCatalog
                 Console.WriteLine("Fruit Color: ");
                 vegetable.FruitColor = Console.ReadLine();
 
+                if(vegetableCategoryName.ToLower() == "tomatoes")
+                {
+                    Console.WriteLine($"Category name is {vegetableCategoryName}");
+                    foreach(string TomatoFruitSet in Enum.GetNames(typeof(TomatoFruitSet)))
+                    {
+                        Console.WriteLine($"Please select the tomato: {vegetable.Name}'s Tomato Fruit Set below: ");
+                        Console.WriteLine($"{TomatoFruitSet}");
+                    }
+
+                    vegetable.FruitBearing = Console.ReadLine();
+                }
 
                 do
                 {
@@ -204,7 +218,7 @@ namespace SeedCatalog
                 vegetables.Add(vegetable);
 
 
-            } while (vegetableName.ToLower() != "exit");
+            } while (response.ToLower() != "no");
         }
     }
 }

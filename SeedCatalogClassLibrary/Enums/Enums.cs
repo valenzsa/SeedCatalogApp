@@ -25,6 +25,12 @@ namespace SeedCatalogClassLibrary.Enums
             LeafyGreens
         }
 
+        public enum TomatoFruitSet
+        {
+            Determinate,
+            Indeterminate
+        }
+
         public enum FlowerCategories
         {
             BeeBalm,
