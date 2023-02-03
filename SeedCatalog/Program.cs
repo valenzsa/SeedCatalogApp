@@ -122,7 +122,7 @@ namespace SeedCatalog
                                         isSelectedCategoryNameMatched = false;
                                     }
                                 }
-                            } while (isSelectedCategoryNameMatched != true);
+                            } while (isSelectedCategoryNameMatched != true && vegetableCategoryName.ToLower() != "exit");
                             
 
                             
