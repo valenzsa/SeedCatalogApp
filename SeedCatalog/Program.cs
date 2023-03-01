@@ -49,7 +49,7 @@ namespace SeedCatalog
 
                 do
                 {
-                    Console.Write("Select the Plant Type (Flowers or Vegetables): ");
+                    Console.Write("Select the Plant Type: Flowers or Vegetables? ");
                     plantType = Console.ReadLine();
 
                 } while (plantType.ToLower() != "flowers" && plantType.ToLower() != "vegetables");
@@ -109,15 +109,16 @@ namespace SeedCatalog
                                 // Loop through Vegetable Categories and display on screen
                                 foreach (string vegetableCategories in Enum.GetNames(typeof(VegetableCategories)))
                                 {
+                                    // Checks if selected vegetable name exists in the list of vegetable categories.
                                     if (vegetableCategoryName.ToLower() == vegetableCategories.ToLower())
                                     {
-                                        Console.WriteLine($"{vegetableCategoryName} is EQUAL TO {vegetableCategories}");
+                                        //Console.WriteLine($"{vegetableCategoryName} is EQUAL TO {vegetableCategories}");
                                         isSelectedCategoryNameMatched = true;
                                         CreateVegetableDetails(vegetableCategoryName);
                                     }
                                     else
                                     {
-                                        Console.WriteLine($"{vegetableCategoryName} is NOT EQUAL TO {vegetableCategories}");
+                                        //Console.WriteLine($"{vegetableCategoryName} is NOT EQUAL TO {vegetableCategories}");
 
                                         isSelectedCategoryNameMatched = false;
                                     }
@@ -152,46 +153,47 @@ namespace SeedCatalog
             {
                 VegetableModel vegetable = new VegetableModel();
 
-                Console.WriteLine($"Add another vegetable to {vegetableCategoryName} category");
+                Console.Write($"Add vegetable to {vegetableCategoryName} category? Type 'Yes' or 'No': ");
                 response = Console.ReadLine();
 
-                Console.WriteLine("Name: ");
+                Console.Write("Name: ");
                 vegetable.Name = Console.ReadLine();
 
-                Console.WriteLine("Description: ");
+                Console.Write("Description: ");
                 vegetable.Description = Console.ReadLine();
 
-                Console.WriteLine("Genus: ");
+                Console.Write("Genus: ");
                 vegetable.Genus = Console.ReadLine();
 
-                Console.WriteLine("Species: ");
+                Console.Write("Species: ");
                 vegetable.Species = Console.ReadLine();
 
-                Console.WriteLine("Light Requirements (ie: Full Sun, Partial Sun, Shade, etc.");
+                Console.Write("Light Requirements (ie: Full Sun, Partial Sun, Shade, etc. ");
                 vegetable.LightRequirements = Console.ReadLine();
 
-                Console.WriteLine("Zone: ");
+                Console.Write("Zone: 6a, 6b, 8a, 10b etc. ");
                 vegetable.Zone = Console.ReadLine();
 
-                Console.WriteLine("Instructions: ");
+                Console.Write("Instructions: ");
                 vegetable.Instructions = Console.ReadLine();
 
-                Console.WriteLine("Images: ");
+                Console.Write("Images: ");
                 vegetable.Images = Console.ReadLine();
 
-                Console.WriteLine("Seed Type: ");
+                Console.Write("Seed Type: ");
                 vegetable.SeedType = Console.ReadLine();
 
-                Console.WriteLine("Fruit Color: ");
+                Console.Write("Fruit Color: (Red, Green, Yellow, Orange, etc. ");
                 vegetable.FruitColor = Console.ReadLine();
 
                 if(vegetableCategoryName.ToLower() == "tomatoes")
                 {
+                    Console.WriteLine();
                     Console.WriteLine($"Category name is {vegetableCategoryName}");
-                    foreach(string TomatoFruitSet in Enum.GetNames(typeof(TomatoFruitSet)))
+                    Console.WriteLine($"Please select {vegetable.Name} Tomato's Fruit Set below: ");
+                    foreach (string TomatoFruitSet in Enum.GetNames(typeof(TomatoFruitSet)))
                     {
-                        Console.WriteLine($"Please select the tomato: {vegetable.Name}'s Tomato Fruit Set below: ");
-                        Console.WriteLine($"{TomatoFruitSet}");
+                        Console.Write($"{TomatoFruitSet}");
                     }
 
                     vegetable.FruitBearing = Console.ReadLine();
