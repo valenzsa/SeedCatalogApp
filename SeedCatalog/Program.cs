@@ -149,12 +149,12 @@ namespace SeedCatalog
             bool IsANumber;
             string response;
 
+            Console.Write($"Add vegetable to {vegetableCategoryName} category? Type 'Yes' or 'No': ");
+            response = Console.ReadLine();
+
             do
             {
                 VegetableModel vegetable = new VegetableModel();
-
-                Console.Write($"Add vegetable to {vegetableCategoryName} category? Type 'Yes' or 'No': ");
-                response = Console.ReadLine();
 
                 Console.Write("Name: ");
                 vegetable.Name = Console.ReadLine();
@@ -168,10 +168,10 @@ namespace SeedCatalog
                 Console.Write("Species: ");
                 vegetable.Species = Console.ReadLine();
 
-                Console.Write("Light Requirements (ie: Full Sun, Partial Sun, Shade, etc. ");
+                Console.Write("Light Requirements (ie: Full Sun, Partial Sun, Shade, etc.): ");
                 vegetable.LightRequirements = Console.ReadLine();
 
-                Console.Write("Zone: 6a, 6b, 8a, 10b etc. ");
+                Console.Write("Zone: (6a, 6b, 8a, 10b etc.) ");
                 vegetable.Zone = Console.ReadLine();
 
                 Console.Write("Instructions: ");
@@ -183,19 +183,24 @@ namespace SeedCatalog
                 Console.Write("Seed Type: ");
                 vegetable.SeedType = Console.ReadLine();
 
-                Console.Write("Fruit Color: (Red, Green, Yellow, Orange, etc. ");
+                Console.Write("Fruit Color: (Red, Green, Yellow, Orange, etc.): ");
                 vegetable.FruitColor = Console.ReadLine();
 
+                // Check if vegetable category is tomatoes
+                // Decide whether its Determinate or Indeterminate
                 if(vegetableCategoryName.ToLower() == "tomatoes")
                 {
                     Console.WriteLine();
                     Console.WriteLine($"Category name is {vegetableCategoryName}");
+                    Console.WriteLine();
+
                     Console.WriteLine($"Please select {vegetable.Name} Tomato's Fruit Set below: ");
+                    Console.WriteLine();
                     foreach (string TomatoFruitSet in Enum.GetNames(typeof(TomatoFruitSet)))
                     {
-                        Console.Write($"{TomatoFruitSet}");
+                        Console.WriteLine($"{TomatoFruitSet}");
                     }
-
+                    Console.WriteLine();
                     vegetable.FruitBearing = Console.ReadLine();
                 }
 
@@ -219,8 +224,11 @@ namespace SeedCatalog
 
                 vegetables.Add(vegetable);
 
+                Console.Write($"Add another vegetable to {vegetableCategoryName} category? Type 'Yes' or 'No': ");
+                response = Console.ReadLine();
 
-            } while (response.ToLower() != "no");
+
+            } while (response.ToLower() != "no"); 
         }
     }
 }
