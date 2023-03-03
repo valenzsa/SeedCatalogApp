@@ -17,5 +17,7 @@ namespace SeedCatalogClassLibrary.Interfaces
         string Instructions { get; set; }
         bool hasImages { get; set; }
         string Images { get; set; }
+
+        void CreateDetails(string categoryName);
     }
 }
