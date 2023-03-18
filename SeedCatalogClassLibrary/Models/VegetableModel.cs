@@ -19,10 +19,10 @@ namespace SeedCatalogClassLibrary.Models
         public string Instructions { get; set; }
         public bool hasImages { get; set; }
         public string Images { get; set; }
+
         public string SeedType { get; set; }
         public string FruitColor { get; set; }
         public List<TomatoFruitSet> TomatoFruitSet { get; set; }
-
         public string FruitBearing { get; set; }
         public int DaysToMature { get; set; }
 

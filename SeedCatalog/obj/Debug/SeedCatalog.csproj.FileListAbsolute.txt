@@ -1,0 +1,11 @@
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalog\bin\Debug\SeedCatalog.exe.config
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalog\bin\Debug\SeedCatalog.exe
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalog\bin\Debug\SeedCatalog.pdb
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalog\bin\Debug\SeedCatalogClassLibrary.dll
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalog\bin\Debug\SeedCatalogClassLibrary.pdb
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalog\obj\Debug\SeedCatalog.csproj.AssemblyReference.cache
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalog\obj\Debug\SeedCatalog.csproj.SuggestedBindingRedirects.cache
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalog\obj\Debug\SeedCatalog.csproj.CoreCompileInputs.cache
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalog\obj\Debug\SeedCatalog.csproj.CopyComplete
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalog\obj\Debug\SeedCatalog.exe
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalog\obj\Debug\SeedCatalog.pdb

@@ -1,0 +1,6 @@
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalogClassLibrary\bin\Debug\SeedCatalogClassLibrary.dll
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalogClassLibrary\bin\Debug\SeedCatalogClassLibrary.pdb
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalogClassLibrary\obj\Debug\SeedCatalogClassLibrary.csproj.AssemblyReference.cache
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalogClassLibrary\obj\Debug\SeedCatalogClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalogClassLibrary\obj\Debug\SeedCatalogClassLibrary.dll
+C:\Users\s0nny\Desktop\valenzsa\tutorials\c#\timcorey\csharpmastercourse\SeedCatalogApp\SeedCatalogClassLibrary\obj\Debug\SeedCatalogClassLibrary.pdb
