@@ -9,4 +9,4 @@
 7. [x] Create Vegetable Model
 8. [x] Create Flower Model
 9. [ ] Display Vendors Information
-10. [ ] Display (a list of) Vegetable and/or Flower owned by the Vendor.
+10. [ ] Display (a list of) Vegetables and/or Flowers owned by the Vendor.
